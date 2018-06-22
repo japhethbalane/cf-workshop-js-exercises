@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		#calculator {
+			display: flex;
+			flex-wrap: wrap;
+			width: 240px;
+			background-color: skyblue;
+			padding: 20px;
+			border-radius: 5px;
+		}
+		#calculator > button {
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			border-radius: 5px;
+		}
+		#result {
+			width: 168px;
+			height: 57px;
+			margin: 1px 5px;
+			padding: 0 1px;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			border-radius: 2px;
+		}
+		#result > span {
+			margin: auto 10px;
+		}
+		.operator, .clear, .equal {
+			background-color: white;
+		}
+		p {
+			padding: 0;
+			margin: 5px auto 0 auto;
+			color: white;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="calculator">
+		<div id="result">
+			<span>{{ arithString }}</span>
+		</div>
+		<button class="operator">/</button>
+		<button class="value">7</button>
+		<button class="value">8</button>
+		<button class="value">9</button>
+		<button class="operator">*</button>
+		<button class="value">4</button>
+		<button class="value">5</button>
+		<button class="value">6</button>
+		<button class="operator">-</button>
+		<button class="value">1</button>
+		<button class="value">2</button>
+		<button class="value">3</button>
+		<button class="operator">+</button>
+		<button class="value">0</button>
+		<button class="clear">c</button>
+		<button class="equal">=</button>
+		</div>
+	</div>
+
+	<!-- vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<!-- my script -->
+	<script>
+		// implement simple calculator using VueJs :)
+	</script>
+
+</body>
+</html>
